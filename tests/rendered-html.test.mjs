@@ -57,6 +57,29 @@ test("server-renders support and legal pages", async () => {
   }
 });
 
+test("sends baseline browser security headers", async () => {
+  const response = await render();
+
+  assert.equal(response.headers.get("x-content-type-options"), "nosniff");
+  assert.equal(response.headers.get("x-frame-options"), "DENY");
+  assert.equal(
+    response.headers.get("referrer-policy"),
+    "strict-origin-when-cross-origin",
+  );
+  assert.match(
+    response.headers.get("strict-transport-security") ?? "",
+    /max-age=31536000/,
+  );
+  assert.match(
+    response.headers.get("permissions-policy") ?? "",
+    /camera=\(\), microphone=\(\), geolocation=\(\), payment=\(\)/,
+  );
+  assert.match(
+    response.headers.get("content-security-policy") ?? "",
+    /default-src 'self'.*frame-ancestors 'none'.*object-src 'none'/,
+  );
+});
+
 test("removes starter preview assets and dependency", async () => {
   const [page, layout, packageJson] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
