@@ -39,7 +39,7 @@ folder. The custom domain is set by `public/CNAME`.
 ## Notes Before Launch
 
 - Replace the placeholder App Store link when the listing is live.
-- Replace `support@craftforexiles.app` if you choose a different support inbox.
+- Replace `support@rudeus.io` if you choose a different support inbox.
 - Add real app screenshots when they are ready.
 - Review the Privacy Policy and Terms of Service before App Review submission.
 - Keep the non-affiliation disclaimer visible on public pages.

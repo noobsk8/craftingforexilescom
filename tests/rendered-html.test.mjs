@@ -31,7 +31,7 @@ test("exports support and legal pages", async () => {
   for (const [path, expected] of pages) {
     const html = await readExported(path);
     assert.match(html, expected);
-    assert.match(html, /support@craftforexiles\.app/);
+    assert.match(html, /support@rudeus\.io/);
   }
 });
 

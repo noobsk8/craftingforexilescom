@@ -20,7 +20,7 @@ export default function SupportPage() {
         crafting action you were trying to use are especially helpful.
       </p>
       <div className="legal-actions">
-        <a className="button primary" href="mailto:support@craftforexiles.app?subject=Crafting%20for%20Exiles%20Support">
+        <a className="button primary" href="mailto:support@rudeus.io?subject=Crafting%20for%20Exiles%20Support">
           Email Support
         </a>
         <a className="button secondary" href="/#requests">

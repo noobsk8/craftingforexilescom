@@ -50,7 +50,7 @@ export default function PrivacyPage() {
       <h2>Contact</h2>
       <p>
         Questions can be sent to{" "}
-        <a href="mailto:support@craftforexiles.app">support@craftforexiles.app</a>.
+        <a href="mailto:support@rudeus.io">support@rudeus.io</a>.
       </p>
     </main>
   );

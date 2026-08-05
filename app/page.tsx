@@ -206,7 +206,7 @@ export default function Home() {
             Want a mechanic, base type, export layout, or Hideout contract added
             next? Send details, screenshots, item examples, or source links.
           </p>
-          <a className="button primary" href="mailto:support@craftforexiles.app?subject=Crafting%20for%20Exiles%20Feature%20Request">
+          <a className="button primary" href="mailto:support@rudeus.io?subject=Crafting%20for%20Exiles%20Feature%20Request">
             Send a Request
           </a>
         </div>
