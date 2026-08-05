@@ -26,8 +26,15 @@ npm run build
 npm run test
 ```
 
-The tests verify that the homepage and required support/legal pages render and
-that starter preview code has been removed.
+The build exports a static site to `out/`. The tests verify that the homepage
+and required support/legal pages render and that starter preview code has been
+removed.
+
+## Hosting
+
+This repo is configured for GitHub Pages. Pushes to `main` run the Pages
+workflow in `.github/workflows/pages.yml` and publish the exported `out/`
+folder. The custom domain is set by `public/CNAME`.
 
 ## Notes Before Launch
 
